@@ -26,7 +26,7 @@ To prevent mainline branch corruption and maintain a completely auditable commit
 ### 2.2 Strict Commit Messaging and Traceability Policies
 To maintain an uncompromised audit trail, commit messages must follow an explicit, standardized syntax that hooks directly into project management trackers like Redmine or GitLab Issues:
 
-```text
+
 [PCR #1042][SYS-REQ-204] Fix actuator current boundary limits
 
 - Resolved high-frequency noise spikes in STM32 ADC sampling loops.
@@ -34,9 +34,9 @@ To maintain an uncompromised audit trail, commit messages must follow an explici
 - Linked to regression test profile: test_adc_overflow_v2.py
 Signed-off-by: Developer Name <email@company.com>
 Reviewed-by: Reviewer Name <email@company.com>
+
 *SQA Gatekeeping:* Pre-receive Git hooks are configured to reject any push or pull request that does not contain a valid, registered PCR ticket reference and requirement link in its message structure.
 
----
 
 ## 3. Configuration Baselines and the Lifecycle Change Control Board (CCB)
 A **Baseline** is a formal, frozen configuration state of the software asset that serves as a common reference point for subsequent development or certification phases.
